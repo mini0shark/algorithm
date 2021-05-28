@@ -22,6 +22,7 @@ var solution = function(N, M, busInfo, start, end){
     while(queue.length>0){
         var now = queue.shift();
         
+        
         city[now].forEach(function(next, i){
             var v = next;
             var dest = v[0];
