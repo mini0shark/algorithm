@@ -1,4 +1,4 @@
-public class Programers68935 {
+public class Programmers68935 {
     // 3진법 뒤집기
     // https://programmers.co.kr/learn/courses/30/lessons/68935
     public int solution(int n) {

@@ -1,4 +1,4 @@
-public class Programers70128 {
+public class Programmers70128 {
     // 내적
     // https://programmers.co.kr/learn/courses/30/lessons/70128
     public int solution(int[] a, int[] b) {
