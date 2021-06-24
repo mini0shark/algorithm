@@ -21,15 +21,15 @@ public class BOJ2504 {
             }else{
                 if(stack.isEmpty()) return false;
                 char top = stack.pop();
-                if(now==')' && top=='['){
+                if(now==')' && top!='('){
                     return false;
                 }
-                if(now==']' && top=='('){
+                if(now==']' && top!='['){
                     return false;
                 }
             }
         }
-        return true;
+        return stack.isEmpty();
     }
     public static int calc(String str){
         if(str.length()==0){
