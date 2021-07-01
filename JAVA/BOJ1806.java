@@ -9,17 +9,13 @@ public class BOJ1806 {
         StringTokenizer st = new StringTokenizer(br.readLine()," ");
         int N = Integer.parseInt(st.nextToken());
         int S = Integer.parseInt(st.nextToken());
-        int[] arr = new int[N+1];
         int[] sum = new int[N+1];
         st = new StringTokenizer(br.readLine()," ");
         for(int i =1; i<=N; i++){
-            arr[i]= Integer.parseInt(st.nextToken());
-            sum[i]= arr[i];
-            if(i>0){
-                sum[i]+=sum[i-1];
-            }
+            sum[i]= Integer.parseInt(st.nextToken());
+            sum[i]+=sum[i-1];
         }
-        if(arr[N]>S){
+        if(sum[N]<S){
             System.out.println(0);
         }else{
             int lt = 0, rt = 1;
